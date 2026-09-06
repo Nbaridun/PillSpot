@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | PillSpot</title>
+
+    <style>
+        
+        
+/*==============================
+        RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f9fbfd;
+    color:var(--dark);
+
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    outline:none;
+
+}
+
+/*==============================
+        HEADER
+==============================*/
+
+.header{
+
+    width:100%;
+    height:90px;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    border-bottom:1px solid #ececec;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:290px;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+    font-weight:700;
+
+}
+
+/*==============================
+        NAVBAR
+==============================*/
+
+.navbar{
+
+    display:flex;
+    gap:40px;
+
+}
+
+.navbar a{
+
+    color:var(--dark);
+    font-size:16px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:var(--primary);
+
+}
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7faff;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        .header{
+
+    width:100%;
+    height:90px;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    border-bottom:1px solid #ececec;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:290px;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+    font-weight:700;
+
+}
+
+/*==============================
+        NAVBAR
+==============================*/
+
+.navbar{
+
+    display:flex;
+    gap:40px;
+
+}
+
+.navbar a{
+
+    color:var(--dark);
+    font-size:16px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#16b364;
+
+}
+
+/*==============================
+        LOGIN BUTTON
+==============================*/
+
+.login-btn{
+
+    padding:12px 30px;
+
+    border:2px solid var(--primary);
+
+    background:white;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: #dff8ee;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #2AA08C;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #666;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #2AA08C;
+            margin-bottom: 15px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        /* Steps */
+        .steps {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .step {
+            flex: 1;
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            background: #2AA08C;
+            color: white;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+
+        /* Safety */
+        .warning {
+            background: #fff4d6;
+            border-left: 5px solid #f0ad00;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #2AA08C;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            background: #2AA08C;
+        }
+
+        /* Footer */
+        footer {
+            background: #172033;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cards,
+            .steps {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+
+    <div class="logo">
+
+        <img src="logo1.png" alt="PillSpot Logo">
+
+
+    </div>
+
+    <nav class="navbar">
+        
+        <a href="mainpage.html">Home</a>
+        <a href="#">Identify</a>
+        <a href="#">Browse Medicines</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+    <!-- Hero -->
+    <div class="hero">
+
+        <h1>
+            About <span>PillSpot</span>
+        </h1>
+
+        <p>
+            Making medicine identification simple, accessible,
+            and convenient through modern technology.
+        </p>
+
+    </div>
+
+
+    <!-- Who We Are -->
+    <section>
+
+        <h2>Who We Are</h2>
+
+        <p>
+            PillSpot is a medicine identification website designed
+            to help users identify medicines by uploading an image
+            of a medicine strip. Our platform uses image analysis
+            technology to provide useful information about medicines.
+        </p>
+
+    </section>
+
+
+    <!-- Mission -->
+    <section>
+
+        <h2>Our Mission</h2>
+
+        <p>
+            Our mission is to make medicine information easier
+            to access and understand through a simple and
+            user-friendly digital platform.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Simple</h3>
+                <p>
+                    Easy-to-use interface for identifying medicines.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Fast</h3>
+                <p>
+                    Quick image-based medicine identification.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Accessible</h3>
+                <p>
+                    Useful medicine information in one place.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+    <section>
+
+        <h2>How PillSpot Works</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="number">1</div>
+                <h3>Upload</h3>
+                <p>
+                    Upload a clear image of your medicine strip.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="number">2</div>
+                <h3>Analyze</h3>
+                <p>
+                    Our system analyzes the uploaded image.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="number">3</div>
+                <h3>Identify</h3>
+                <p>
+                    View the identified medicine information.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Safety -->
+    <section>
+
+        <h2>Safety First</h2>
+
+        <div class="warning">
+
+            <p>
+                PillSpot is an informational tool and should not
+                replace professional medical advice. Identification
+                results may not always be accurate. Always verify
+                medicine information with the packaging, a pharmacist,
+                or a qualified healthcare professional before taking
+                any medicine.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 PillSpot. All rights reserved.
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        // Simple page-load message
+        console.log("PillSpot About Us page loaded successfully.");
+
+    </script>
+
+</body>
+</html>
+```

@@ -1,0 +1,1000 @@
+/*==============================
+        GOOGLE FONT
+==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==============================
+        CSS VARIABLES
+==============================*/
+
+:root{
+
+    --primary:#27c27d;
+    --primary-dark:#18a867;
+    --light-green:#eefdf5;
+
+    --dark:#1f2937;
+    --text:#5f6c7b;
+
+    --white:#ffffff;
+    --border:#e8e8e8;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/*==============================
+        RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f9fbfd;
+    color:var(--dark);
+
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    outline:none;
+
+}
+
+/*==============================
+        HEADER
+==============================*/
+
+.header{
+
+    width:100%;
+    height:90px;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    border-bottom:1px solid #ececec;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:290px;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+    font-weight:700;
+
+}
+
+/*==============================
+        NAVBAR
+==============================*/
+
+.navbar{
+
+    display:flex;
+    gap:40px;
+
+}
+
+.navbar a{
+
+    color:var(--dark);
+    font-size:16px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:var(--primary);
+
+}
+
+/*==============================
+        LOGIN BUTTON
+==============================*/
+
+.signup-btn{
+
+    padding:12px 30px;
+
+    border:2px solid var(--primary);
+
+    background:white;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.signup-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*==============================
+        HERO SECTION
+==============================*/
+
+.hero{
+
+    width:100%;
+
+    min-height:620px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:80px 8%;
+
+}
+
+/*==============================
+        HERO CONTENT
+==============================*/
+
+.hero-content{
+
+    width:48%;
+
+}
+
+.hero-content h1{
+
+    font-size:68px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.hero-content p{
+
+    font-size:21px;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    width:90%;
+
+}
+
+/*==============================
+        HERO IMAGE
+==============================*/
+
+.hero-image{
+
+    width:40%;
+
+    position:relative;
+
+}
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#dff8ee;
+
+    border-radius:55% 45% 50% 60%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:-1;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/*==============================
+        ANIMATION
+==============================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+        COMMON BUTTON
+==============================*/
+
+.primary-btn{
+
+    background:linear-gradient(90deg,#28c76f,#16b364);
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
+}
+/*====================================
+      IDENTIFY OPTIONS SECTION
+====================================*/
+
+.identify-options{
+
+    width:100%;
+
+    padding:20px 8% 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+/*====================================
+          CARD
+====================================*/
+
+.option-card{
+
+    background:#ffffff;
+
+    border:1px solid #e9eef2;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:0.35s ease;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.option-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.10);
+
+}
+
+/* Active Card */
+
+.option-card.active{
+
+    background:#f5fffa;
+
+    border:2px solid var(--primary);
+
+}
+
+/*====================================
+            ICONS
+====================================*/
+
+.icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:42px;
+
+}
+
+.icon.green{
+
+    background:#e8fff3;
+
+    color:var(--primary);
+
+}
+
+.icon.gold{
+
+    background:#fff6df;
+
+    color:#d99a1d;
+
+}
+
+.icon.blue{
+
+    background:#edf4ff;
+
+    color:#377dff;
+
+}
+
+/*====================================
+        CARD TEXT
+====================================*/
+
+.option-card h3{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+    color:var(--dark);
+
+}
+
+.option-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+
+    min-height:75px;
+
+}
+
+/*====================================
+        CARD BUTTONS
+====================================*/
+
+.option-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+/* Green Button */
+
+.option-card.active button{
+
+    background:linear-gradient(90deg,#2ac97d,#1ca862);
+
+    color:white;
+
+}
+
+.option-card.active button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(39,194,125,.30);
+
+}
+
+/* Outline Buttons */
+
+.outline-btn{
+
+    background:linear-gradient(90deg,#2ac97d,#1ca862);
+
+    border:2px solid #dfe6ec;
+
+    color:var(--white);
+
+}
+
+.outline-btn:hover{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+    color:white;
+
+}
+
+/*====================================
+        CARD ANIMATION
+====================================*/
+
+.option-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.option-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.option-card:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/*======================================
+            FEATURES SECTION
+======================================*/
+
+.features{
+
+    width:100%;
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    background:#ffffff;
+
+}
+
+/*======================================
+            FEATURE CARD
+======================================*/
+
+.feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    background:#ffffff;
+
+    border:1px solid #ebebeb;
+
+    border-radius:18px;
+
+    padding:28px 22px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+    transition:0.35s ease;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+    border-color:var(--primary);
+
+}
+
+/*======================================
+            FEATURE ICON
+======================================*/
+
+.feature-icon{
+
+    width:65px;
+
+    height:65px;
+
+    min-width:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#e9fbf3;
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    transition:.3s;
+
+}
+
+.feature:hover .feature-icon{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+/*======================================
+            FEATURE TEXT
+======================================*/
+
+.feature h4{
+
+    font-size:20px;
+
+    color:var(--dark);
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.feature p{
+
+    font-size:15px;
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+/*======================================
+        SECTION SPACING
+======================================*/
+
+.features::before{
+
+    content:"";
+
+    position:absolute;
+
+    display:none;
+
+}
+
+/*======================================
+        FEATURE ANIMATION
+======================================*/
+
+.feature{
+
+    animation:featureFade .8s ease;
+
+}
+
+.feature:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.feature:nth-child(3){
+
+    animation-delay:.30s;
+
+}
+
+.feature:nth-child(4){
+
+    animation-delay:.45s;
+
+}
+
+@keyframes featureFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+} 
+
+/* ===================== SEARCH MODAL ===================== */
+
+/* ================================
+   PILLSPOT SEARCH MODAL
+================================ */
+
+.search-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 9999;
+
+    /* Smooth background */
+    animation: modalFadeIn 0.2s ease;
+}
+
+
+/* ================================
+   MODAL BOX
+================================ */
+
+.search-modal-box {
+    position: relative;
+
+    width: 90%;
+    max-width: 450px;
+
+    background: #ffffff;
+
+    padding: 32px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+
+    animation: modalSlideIn 0.25s ease;
+}
+
+
+/* ================================
+   TITLE
+================================ */
+
+.search-modal-box h2 {
+    margin: 0 0 7px;
+
+    text-align: center;
+
+    color: #111827;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* ================================
+   SUBTITLE
+================================ */
+
+.modal-subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin: 0 0 26px;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   CLOSE BUTTON
+================================ */
+
+.close-modal {
+    position: absolute;
+
+    right: 18px;
+    top: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 27px;
+
+    line-height: 30px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.close-modal:hover {
+    background: #eaf8f1;
+
+    color: #0fa968;
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+/* LABEL */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   INPUT
+================================ */
+
+.form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1.5px solid #d9d9d9;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus {
+    border-color: #16a968;
+
+    box-shadow: 0 0 0 3px rgba(22, 169, 104, 0.10);
+}
+
+
+/* ================================
+   SEARCH BUTTON
+================================ */
+
+.modal-search-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #12a765;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.modal-search-btn:hover {
+    background: #0d8f55;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 15px rgba(18, 167, 101, 0.20);
+}
+
+
+/* ================================
+   MODAL ANIMATION
+================================ */
+
+@keyframes modalFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes modalSlideIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 500px) {
+
+    .search-modal-box {
+        padding: 25px 20px;
+
+        border-radius: 17px;
+    }
+
+    .search-modal-box h2 {
+        font-size: 22px;
+    }
+
+}
